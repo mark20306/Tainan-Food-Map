@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Kodinger">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>註冊</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="my-login.css">
+
+    
+
+
+   
+</head>
+<body class="my-login-page">
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-md-center h-100">
+				<div class="card-wrapper">
+					
+					<img src="pictures/logo.png">
+					
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title">註冊</h4>
+							
+								<div class="form-group">
+									<label for="name">用戶名稱</label>
+									<input id="name" type="text" class="form-control" name="name" required autofocus>
+									
+								</div>
+
+								<div class="form-group">
+									<label for="email">E-Mail </label>
+									<input id="email" type="text" class="form-control" name="email" required>
+									
+								</div>
+
+								<div class="form-group">
+									<label for="password">密碼</label>
+									<input id="password" type="text" class="form-control" name="password" required data-eye>
+									
+								</div>
+
+								
+
+								<div class="form-group m-0">
+									<button type="submit" class="btn btn-primary btn-block" onclick="r()">
+										註冊
+									</button>
+								</div>
+								<div class="mt-4 text-center">
+									已經有帳號了? <a href="登入.html">登入</a>
+								</div>
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
+
+    <script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDQgl49AT2ytLVcesOECCLJQnXR6778Adg",
+    authDomain: "web-test-d4133.firebaseapp.com",
+    projectId: "web-test-d4133",
+    storageBucket: "web-test-d4133.appspot.com",
+    messagingSenderId: "268641825290",
+    appId: "1:268641825290:web:1fabee35daa803de3d65f3",
+    measurementId: "G-H0FTX75R5D"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  function r() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      firebase.auth().createUserWithEmailAndPassword(email, password).then(function () {
+          alert(name+"註冊成功!");
+
+      }).catch(function () {
+          alert("註冊失敗!");
+      });
+  }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,389 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Open+Sans&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ef89faf6e7.js" crossorigin="anonymous"></script>
+    <title>店家介紹</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <a class="navbar-brand">
+                        <img src="pictures/logo.png" width="175" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="首頁.html" style="margin:0 8px">首頁</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="店家介紹.html" style="margin:0 8px">店家介紹</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="今天吃什麼.html" style="margin:0 8px">今天吃什麼?</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" id="nowuser" href="#" style="margin:0 8px">使用者</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" id="btnLogOut" href="#" style="margin:0 8px">登出</a>
+                            </li>
+
+
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit" style="margin:-3px 5px">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="intro">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>快來看看作者的推薦吧!</h1>
+                        <p class="lead">不知道想吃什麼?快來看看吧!</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="latest">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="outer">
+                        <a href="文章牛肉湯.html">
+                            <div class="upper">
+                                <img src="pictures/文章牛肉湯.jpg"/>
+                                <div class="innertext">
+                                    <span>安平區</span>
+                                    <h4>小:100 大:150</h4>
+                                </div>
+
+                            </div>
+                            <div class="lower">
+                                <h3>文章牛肉湯</h3>
+                                <span><i class="fas fa-map-marker-alt"></i> 台南市安平區安平路590號</span>
+                                <br />
+                                <span><i class="far fa-clock"></i>一~六:10:00-02:00 日:10:00-00:00   </span>
+                                <br />
+                                <span><i class="fas fa-phone"></i>062284626</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="outer">
+                        <a href="邱家小卷米粉.html">
+                            <div class="upper">
+                                <img src="pictures/邱家小卷米粉.jpg" />
+                                <div class="innertext">
+                                    <span>中西區</span>
+                                    <h4>小卷米粉:90 </h4>
+                                </div>
+
+                            </div>
+                            <div class="lower">
+                                <h3>邱家小卷米粉</h3>
+                                <span><i class="fas fa-map-marker-alt"></i> 台南市中西區國華街三段5號</span>
+                                <br />
+                                <span><i class="far fa-clock"></i>一~日:11:00-17:00 三休息</span>
+                                <br />
+                                <span><i class="fas fa-phone"></i> 062210517</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="outer">
+                        <a href="雙生綠豆沙牛奶.html">
+                            <div class="upper">
+                                <img src="pictures/雙生綠豆沙牛奶.jpg" />
+                                <div class="innertext">
+                                    <span>中西區</span>
+                                    <h4>中:40 大:45</h4>
+                                </div>
+
+                            </div>
+                            <div class="lower">
+                                <h3>双生綠豆沙牛奶</h3>
+                                <span><i class="fas fa-map-marker-alt"></i> 台南市中西區民族路二段281號</span>
+                                <br />
+                                <span><i class="far fa-clock"></i>三~日:11:00-18:00</span>
+                                <br />
+                                <span><i class="fas fa-phone"></i>062210901</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="latest">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="outer">
+                        <a href="國榮肉燥飯.html">
+                            <div class="upper">
+                                <img src="pictures/國榮肉燥飯.jpg" />
+                                <div class="innertext">
+                                    <span>中西區</span>
+                                    <h4>小:15 中:20 大:30</h4>
+                                </div>
+
+                            </div>
+                            <div class="lower">
+                                <h3>國榮肉燥飯</h3>
+                                <span><i class="fas fa-map-marker-alt"></i> 台南市中西區大同路一段142號</span>
+                                <br />
+                                <span><i class="far fa-clock"></i>11:00 - 22:00（賣完會提前收）</span>
+                                <br />
+                                <span><i class="fas fa-phone"></i>無</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="outer">
+                        <a href="覺丸拉麵.html">
+                            <div class="upper">
+                                <img src="pictures/覺丸拉麵.jpg" />
+                                <div class="innertext">
+                                    <span>東區</span>
+                                    <h4>原味豚骨:170</h4>
+                                </div>
+
+                            </div>
+                            <div class="lower">
+                                <h3>覺丸拉麵</h3>
+                                <span><i class="fas fa-map-marker-alt"></i> 台南市東區東興路275號</span>
+                                <br />
+                                <span><i class="far fa-clock"></i>一~日:11:30-14:00,17:00-20:00 二休息</span>
+                                <br />
+                                <span><i class="fas fa-phone"></i>無</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="outer">
+                        <a href="勝利早點.html">
+                            <div class="upper">
+                                <img src="pictures/勝利早點.jpg" />
+                                <div class="innertext">
+                                    <span>東區</span>
+                                    <h4>蔥餅:15</h4>
+                                </div>
+
+                            </div>
+                            <div class="lower">
+                                <h3>勝利早點</h3>
+                                <span><i class="fas fa-map-marker-alt"></i> 台南市東區勝利路119號</span>
+                                <br />
+                                <span><i class="far fa-clock"></i>一~日:18:00-04:00</span>
+                                <br />
+                                <span><i class="fas fa-phone"></i>062386043</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="latest">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="outer">
+                        <a href="沃隼釀造.html">
+                            <div class="upper">
+                                <img src="pictures/沃隼釀造.jpg" />
+                                <div class="innertext">
+                                    <span>中西區</span>
+                                    <h4>奶油啤啤挫:150</h4>
+                                </div>
+
+                            </div>
+                            <div class="lower">
+                                <h3>沃隼釀造</h3>
+                                <span><i class="fas fa-map-marker-alt"></i> 台南市中西區神農街108號</span>
+                                <br />
+                                <span><i class="far fa-clock"></i>三~日:16:00-00:00</span>
+                                <br />
+                                <span><i class="fas fa-phone"></i>063583994</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="outer">
+                        <a href="王氏魚皮.html">
+                            <div class="upper">
+                                <img src="pictures/王氏魚皮.jpg" />
+                                <div class="innertext">
+                                    <span>安平區</span>
+                                    <h4>魚皮湯:65</h4>
+                                </div>
+
+                            </div>
+                            <div class="lower">
+                                <h3>王氏魚皮</h3>
+                                <span><i class="fas fa-map-marker-alt"></i> 台南市安平區安平路612號</span>
+                                <br />
+                                <span><i class="far fa-clock"></i>平日:04:00 - 14:00 假日:04:00 - 15:00</span>
+                                <br />
+                                <span><i class="fas fa-phone"></i>062288095</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="outer">
+                        <a href="鹿耳深夜甜點.html">
+                            <div class="upper">
+                                <img src="pictures/鹿耳深夜甜點.jpg" />
+                                <div class="innertext">
+                                    <span>中西區</span>
+                                    <h4>伯爵奶茶戚風蛋糕:130</h4>
+                                </div>
+
+                            </div>
+                            <div class="lower">
+                                <h3>鹿耳深夜甜點</h3>
+                                <span><i class="fas fa-map-marker-alt"></i> 台南市中西區民族路二段281號</span>
+                                <br />
+                                <span><i class="far fa-clock"></i>一~三:08:30-15:30 四~日:多18:00–23:30</span>
+                                <br />
+                                <span><i class="fas fa-phone"></i>062370910</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-left">
+                    <img src="pictures/logo.png" />
+                    <p>全台南好吃的東西都在這!快來看看吧!</p>
+                </div>
+                <div class="col-md-4 text-left">
+                    <h4>連結</h4>
+                    <ul>
+                        <li><a href="首頁.html">首頁</a></li>
+                        <li><a href="店家介紹.html">店家介紹</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="今天吃什麼.html">今天吃什麼?</a></li>
+                        <li><a href="#" id="LogOut">登出</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-left">
+                    <h4>聯絡我們</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>   國立臺南大學數位學習科技學系<br /><i class="fas fa-phone"></i> 0983122180<br /><i class="fas fa-envelope"></i> <a href="mailto:s10755007@gm2.nutn.edu.tw">s10755007@gm2.nutn.edu.tw</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDQgl49AT2ytLVcesOECCLJQnXR6778Adg",
+    authDomain: "web-test-d4133.firebaseapp.com",
+    projectId: "web-test-d4133",
+    storageBucket: "web-test-d4133.appspot.com",
+    messagingSenderId: "268641825290",
+    appId: "1:268641825290:web:1fabee35daa803de3d65f3",
+    measurementId: "G-H0FTX75R5D"
+    };
+
+        // Initialize Firebase
+
+  firebase.initializeApp(firebaseConfig);
+  document.body.onload = now();
+  function now() {
+      firebase.auth().onAuthStateChanged(function () {
+          var user = firebase.auth().currentUser;
+          var name1 = document.getElementById("nowuser");
+          if (user != null) {
+              name1.innerHTML = user.email;
+          }
+      })
+  }
+
+
+
+
+  var btnLogOut = document.getElementById('btnLogOut');
+  btnLogOut.onclick = function () {
+      firebase.auth().signOut().then(function () {
+          alert('成功登出');
+          location.href = '登入.html';
+
+      })
+  }
+  var LogOut = document.getElementById('LogOut');
+  LogOut.onclick = function () {
+      firebase.auth().signOut().then(function () {
+          alert('成功登出');
+          location.href = '登入.html';
+
+      })
+  }
+
+    </script>
+</body>
+</html>

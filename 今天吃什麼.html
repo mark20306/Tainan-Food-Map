@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Open+Sans&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ef89faf6e7.js" crossorigin="anonymous"></script>
+    <title>今天吃什麼?</title>
+    
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <a class="navbar-brand">
+                        <img src="pictures/logo.png" width="175" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="首頁.html" style="margin:0 8px">首頁</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="店家介紹.html" style="margin:0 8px">店家介紹</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="今天吃什麼.html" style="margin:0 8px">今天吃什麼?</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" id="nowuser" href="#" style="margin:0 8px">使用者</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" id="btnLogOut" href="#" style="margin:0 8px">登出</a>
+                            </li>
+
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit" style="margin:-3px 5px">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="intro">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>熟門熟路的大神都在這!</h1>
+                        <p class="lead">不知道想吃什麼?快來看看吧!</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="email">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h3>來討論今天要吃什麼吧!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-left">
+                    
+                    <div id="show"></div>
+                    <div class="input-group input-group-lg">
+                        
+                        <input type="text" id="name" style="margin-top:200px" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="暱稱">
+                        <input type="text"id="content" style="margin-top:200px" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="聊天內容">
+
+
+                    </div>
+                    <button class="btn btn-outline-success" id="btn" type="submit" style="margin:10px 5px">送出</button>
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-left">
+                    <img src="pictures/logo.png" />
+                    <p>全台南好吃的東西都在這!快來看看吧!</p>
+                </div>
+                <div class="col-md-4 text-left">
+                    <h4>連結</h4>
+                    <ul>
+                        <li><a href="首頁.html">首頁</a></li>
+                        <li><a href="店家介紹.html">店家介紹</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="今天吃什麼.html">今天吃什麼?</a></li>
+                        <li><a href="#" id="LogOut">登出</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-left">
+                    <h4>聯絡我們</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>   國立臺南大學數位學習科技學系<br /><i class="fas fa-phone"></i> 0983122180<br /><i class="fas fa-envelope"></i> <a href="mailto:s10755007@gm2.nutn.edu.tw">s10755007@gm2.nutn.edu.tw</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="content.js"></script>
+</body>
+</html>
